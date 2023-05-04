@@ -26,8 +26,8 @@ jobs:
           -Dsonar.organization=p-wilbrink
           -Dsonar.projectKey=p-wilbrink_validation-rules
           -Dsonar.sources=src/
-          -Dsonar.test.exclusions=./__tests__/**
-          -Dsonar.tests=./__tests__/
+          -Dsonar.test.exclusions=__tests__/**
+          -Dsonar.tests=__tests__/
           -Dsonar.verbose=true
           -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info
 
