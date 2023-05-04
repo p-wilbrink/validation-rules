@@ -1,4 +1,4 @@
-import { ValueAccessor } from '..';
+import { ValueAccessor } from "../value-accessor";
 
 /**
  * Checks if the input value is empty
@@ -9,7 +9,7 @@ import { ValueAccessor } from '..';
 export const isEmptyInputvalue = (value: any): boolean => {
   return (
     value === null ||
-    ((typeof value === 'string' || Array.isArray(value)) && value.length === 0)
+    ((typeof value === "string" || Array.isArray(value)) && value.length === 0)
   );
 };
 
@@ -20,7 +20,7 @@ export const isEmptyInputvalue = (value: any): boolean => {
  * @return string
  */
 export const getValue = (valueAccessor: ValueAccessor | string): string => {
-  return typeof valueAccessor === 'string'
+  return typeof valueAccessor === "string"
     ? valueAccessor
     : valueAccessor.value;
 };

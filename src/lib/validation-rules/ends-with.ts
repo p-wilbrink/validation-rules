@@ -1,6 +1,6 @@
-import { ValidatorFn } from '../validator-fn';
-import { ValueAccessor } from '../value-accessor';
-import { getValue, isEmptyInputvalue } from './utils';
+import { ValidatorFn } from "../validator-fn";
+import { ValueAccessor } from "../value-accessor";
+import { getValue, isEmptyInputvalue } from "./utils";
 
 /**
  * Ends with Validator
@@ -19,5 +19,5 @@ export const endsWith =
       return null;
     }
 
-    return value.endsWith(criteria) ? null : 'ENDS_WITH';
+    return value.endsWith(criteria) ? null : "ENDS_WITH";
   };
